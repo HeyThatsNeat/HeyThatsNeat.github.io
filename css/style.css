@@ -67,6 +67,11 @@ header {
   margin-right: 7px;
 }
 
+.project-img {
+  width: 35px;
+  margin-right: 9px;
+}
+
 ul {
   list-style-type: none;
   display: block;
