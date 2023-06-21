@@ -62,7 +62,13 @@ header {
   margin: 0 3px;
 }
 
+.home-img {
+  width: 25px;
+  margin-right: 7px;
+}
+
 ul {
+  list-style-type: none;
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
