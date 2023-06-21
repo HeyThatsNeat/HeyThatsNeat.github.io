@@ -72,6 +72,11 @@ header {
   margin-right: 9px;
 }
 
+.about-img {
+  width: 30px;
+  margin-right: 8px;
+}
+
 ul {
   list-style-type: none;
   display: block;
