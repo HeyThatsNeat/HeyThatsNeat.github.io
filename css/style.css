@@ -1,6 +1,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
+  margin: 0;
 }
 
 header {
@@ -74,7 +75,15 @@ header {
 
 .about-img {
   width: 30px;
-  margin-right: 8px;
+  margin-right: 9px;
+}
+
+.welcome-video {
+  position: fixed;
+  left: -85px;
+  top: -118px;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 ul {
@@ -85,6 +94,10 @@ ul {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   padding-inline-start: 40px;
+}
+
+span {
+  padding-top: 7px;
 }
 
 li {
@@ -98,10 +111,11 @@ li {
   display: flex;
   align-items: center;
   color: #a8a9b4;
-  padding: 12px 15px;
+  padding: 12px 0px;
   margin-bottom: 8px;
   transition: 0.3s;
-  font-size: 15px;
+  font-size: 16px;
+  text-decoration: none;
 }
 
 #header {
