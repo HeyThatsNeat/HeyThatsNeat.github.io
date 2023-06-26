@@ -136,6 +136,7 @@ li {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #040b14;
+  /* background: #040b14; */
+  background-color: #0e121b;
   overflow-y: auto;
 }
