@@ -79,11 +79,19 @@ header {
 }
 
 .welcome-video {
+  position: relative;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  object-fit: fill;
+}
+
+.video-div {
   position: fixed;
-  left: -85px;
-  top: -118px;
-  min-width: 100%;
-  min-height: 100%;
+  top: 0;
+  left: 330px;
+  width: 100%;
+  height: 100%;
 }
 
 ul {
