@@ -1,0 +1,20 @@
+.about-div {
+  display: flex;
+  justify-content: center;
+  margin-left: 480px;
+  margin-right: 150px;
+  margin-top: 90px;
+  text-align: center;
+  color: white;
+}
+
+.about-me-h1 {
+  color: white;
+  margin: 40px 150px 40px 480px;
+  text-align: center;
+}
+
+.brand-statement-p {
+  font-size: 12px;
+  text-align: start;
+}
