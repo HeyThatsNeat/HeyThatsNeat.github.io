@@ -1,20 +1,55 @@
 .about-div {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   margin-left: 480px;
   margin-right: 150px;
-  margin-top: 90px;
   text-align: center;
-  color: white;
+  color: #a8a9b4;
 }
 
-.about-me-h1 {
+.about-me-h1, .about-me-h3 {
   color: white;
-  margin: 40px 150px 40px 480px;
+  margin: 50px 150px 33px 550px;
   text-align: center;
+}
+
+.about-me-h3 {
+  margin: 0 150px 0 550px;
+}
+
+.languages-img {
+  width: 60%;
+  margin-left: 60px;
+  margin-top: 20px;
 }
 
 .brand-statement-p {
-  font-size: 12px;
+  font-size: 15px;
   text-align: start;
+  margin-top: 24px;
+  margin-right: 10px;
+  margin-left: 70px;
+}
+
+.list-ul {
+  color: white;
+  list-style-type: circle;
+  display: block;
+  font-size: 14px;
+  text-align: start;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 30px;
+  margin-right: 100px;
+  margin-left: 55px;
+  line-height: 3;
+}
+
+.anime-img {
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
 }

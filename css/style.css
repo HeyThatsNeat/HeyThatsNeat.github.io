@@ -116,7 +116,8 @@ li {
   text-align: -webkit-match-parent;
 }
 
-.nav-a {
+.index-a, .about-a,
+.my-work-a, .contact-a {
   display: flex;
   align-items: center;
   color: #a8a9b4;
