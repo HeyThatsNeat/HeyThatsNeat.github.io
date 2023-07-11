@@ -1,0 +1,21 @@
+form {
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+body {
+  color: white;
+}
+
+label, input, textarea {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
