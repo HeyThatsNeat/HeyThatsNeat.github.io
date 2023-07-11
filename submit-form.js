@@ -35,9 +35,9 @@ const server = http.createServer((req, res) => {
       }
 
       // Set CORS headers to allow cross-origin POST requests
-      res.setHeader('Access-Control-Allow-Origin', '*');
-      res.setHeader('Access-Control-Allow-Methods', 'POST');
-      res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+      res.setHeader('Access-Control-Allow-Origin', '*')
+      res.setHeader('Access-Control-Allow-Methods', 'POST')
+      res.setHeader('Access-Control-Allow-Headers', 'Content-Type')
 
       // Send the email
       transporter.sendMail(mailOptions, (error, info) => {
@@ -47,7 +47,12 @@ const server = http.createServer((req, res) => {
           res.end('Oops! Something went wrong and we couldn\'t send your message.')
         } else {
           console.log('Email sent: ' + info.response)
-          res.end('Thank you! Your message has been sent.')
+          // Redirect the user back to the referring page
+          const redirectUrl = 'http://localhost:5500/contact.html'
+          res.writeHead(302, {
+            Location: redirectUrl,
+          })
+          res.end()
         }
       })
     })

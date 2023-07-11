@@ -1,10 +1,21 @@
 form {
-  max-width: 400px;
+  width: 50%;
   margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  left: 100px;
 }
 
 body {
   color: white;
+}
+
+.name-label, .email-label, .message-label {
+  position: relative;
+  right: 10px;
 }
 
 label, input, textarea {
