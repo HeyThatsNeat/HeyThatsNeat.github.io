@@ -61,17 +61,22 @@
       </div>
     </header>
     <h1>Contact me here!</h1>
-    <form action="http://localhost:3000" method="POST">
-      <label class="name-label" for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-  
-      <label class="email-label" for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-  
-      <label class="message-label" for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
-  
-      <input type="submit" value="Submit">
-    </form>
+    <div class="contact-form-and-contact-info-div">
+      <form action="http://localhost:3000" method="POST">
+        <label class="name-label" for="name">Name:</label>
+        <input class="input" type="text" id="name" name="name" required>
+      
+        <label class="email-label" for="email">Email:</label>
+        <input class="input" type="email" id="email" name="email" required>
+      
+        <label class="message-label" for="message">Message:</label>
+        <textarea class="textarea" id="message" name="message" required></textarea>
+      
+        <input type="submit" value="Submit">
+      </form>
+      <div class="contact-info">
+        <h1 class="contact-info-h1">Contact Info</h1>
+      </div>
+    </div>
   </body>
 </html>

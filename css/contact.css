@@ -1,5 +1,5 @@
 form {
-  width: 50%;
+  width: 100%;
   margin: 20px auto;
   display: flex;
   justify-content: center;
@@ -13,9 +13,22 @@ body {
   color: white;
 }
 
+.input {
+  width: 45%;
+  display: flex;
+  align-self: start;
+}
+
+.textarea {
+  display: flex;
+  align-self: start;
+  width: 90%;
+  height: 100px;
+}
+
 .name-label, .email-label, .message-label {
-  position: relative;
-  right: 10px;
+  display: flex;
+  align-self: flex-start;
 }
 
 label, input, textarea {
@@ -24,9 +37,28 @@ label, input, textarea {
 }
 
 input[type="submit"] {
-  background-color: #4CAF50;
+  position: relative;
+  background-color: #78a1d1;
   color: white;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
+  border-radius: 17px;
+  right: 50px;
+}
+
+.contact-info {
+  width: 600px;
+  margin-left: 200px;
+}
+
+.contact-form-and-contact-info-div {
+  display: flex;
+  width: 1050px;
+  position: relative;
+  left: 415px;
+}
+
+.contact-info-h1 {
+  color: white;
 }
