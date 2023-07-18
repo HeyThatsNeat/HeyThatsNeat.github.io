@@ -142,3 +142,14 @@ li {
   background-color: #0e121b;
   overflow-y: auto;
 }
+
+::-webkit-scrollbar {
+  width: 14px;
+  background: #0e121b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(120, 162, 209, 0.451);
+  -webkit-border-radius: 0.5ex;
+  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.75);
+}
