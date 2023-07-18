@@ -60,22 +60,31 @@
         </nav>
       </div>
     </header>
+
     <h1>Contact me here!</h1>
     <div class="contact-form-and-contact-info-div">
       <form action="http://localhost:3000" method="POST">
+        <h1 class="contact-me-h1">Contact Me</h1>
         <label class="name-label" for="name">Name:</label>
-        <input class="input" type="text" id="name" name="name" required>
+        <input class="input" type="text" id="name" name="name" placeholder="First and last name here please" required>
       
         <label class="email-label" for="email">Email:</label>
-        <input class="input" type="email" id="email" name="email" required>
+        <input class="input" type="email" id="email" name="email" placeholder="you@example.com" required>
       
         <label class="message-label" for="message">Message:</label>
-        <textarea class="textarea" id="message" name="message" required></textarea>
+        <textarea class="textarea" id="message" name="message" placeholder="I would love to hear your thoughts here" required></textarea>
       
         <input type="submit" value="Submit">
       </form>
       <div class="contact-info">
         <h1 class="contact-info-h1">Contact Info</h1>
+        <ul class="contact-info-ul">
+          <li><strong>Name :</strong> Hunter Eckhoff</li>
+          <li><strong>Email :</strong> hunterprogrammer111@gmail.com</li>
+          <li><strong>Phone :</strong> 703-431-8702</li>
+          <li><strong>Age :</strong> 25</li>
+          <li><strong>Area :</strong> Northern Virgina / DC area</li>
+        </ul>
       </div>
     </div>
   </body>

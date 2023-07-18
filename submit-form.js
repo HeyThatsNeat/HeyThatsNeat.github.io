@@ -48,7 +48,7 @@ const server = http.createServer((req, res) => {
         } else {
           console.log('Email sent: ' + info.response)
           // Redirect the user back to the referring page
-          const redirectUrl = 'http://localhost:5500/contact.html'
+          const redirectUrl = 'https://heythatsneat.github.io/contact.html'
           res.writeHead(302, {
             Location: redirectUrl,
           })

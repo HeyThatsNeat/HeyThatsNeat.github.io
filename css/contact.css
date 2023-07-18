@@ -1,6 +1,6 @@
 form {
   width: 100%;
-  margin: 20px auto;
+  margin: 0 auto 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,6 +17,10 @@ body {
   width: 45%;
   display: flex;
   align-self: start;
+  height: 20px;
+  border-radius: 25px;
+  border: none;
+  padding-left: 9px;
 }
 
 .textarea {
@@ -24,11 +28,14 @@ body {
   align-self: start;
   width: 90%;
   height: 100px;
+  border-radius: 10px;
+  padding-left: 9px;
 }
 
 .name-label, .email-label, .message-label {
   display: flex;
   align-self: flex-start;
+  margin-top: 15px;
 }
 
 label, input, textarea {
@@ -44,21 +51,37 @@ input[type="submit"] {
   border: none;
   cursor: pointer;
   border-radius: 17px;
-  right: 50px;
+  right: 25px;
+  margin-top: 10px;
 }
 
 .contact-info {
   width: 600px;
   margin-left: 200px;
+  margin-right: 0;
 }
 
 .contact-form-and-contact-info-div {
   display: flex;
   width: 1050px;
   position: relative;
-  left: 415px;
+  left: 370px;
 }
 
 .contact-info-h1 {
   color: white;
+}
+
+.contact-info-ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 0;
+  line-height: 2.5em;
+  margin-top: 30px;
+}
+
+.contact-me-h1 {
+  display: flex;
+  align-self: start;
 }
