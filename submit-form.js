@@ -15,10 +15,8 @@ const server = http.createServer((req, res) => {
       const email = formData.email
       const message = formData.message
 
-      // Set up nodemailer for sending emails
+      // Setting up nodemailer for sending emails
       const transporter = nodemailer.createTransport({
-        // Configure the email transport settings (e.g., SMTP)
-        // For example, using Gmail SMTP:
         service: 'Gmail',
         auth: {
           user: 'hunterprogrammer111@gmail.com',
@@ -26,7 +24,7 @@ const server = http.createServer((req, res) => {
         },
       })
 
-      // Compose the email
+      // Composing the email
       const mailOptions = {
         from: email,
         to: 'hunterprogrammer111@gmail.com',
@@ -34,12 +32,12 @@ const server = http.createServer((req, res) => {
         text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
       }
 
-      // Set CORS headers to allow cross-origin POST requests
+      // Setting CORS headers to allow cross-origin POST requests
       res.setHeader('Access-Control-Allow-Origin', '*')
       res.setHeader('Access-Control-Allow-Methods', 'POST')
       res.setHeader('Access-Control-Allow-Headers', 'Content-Type')
 
-      // Send the email
+      // Sending the email
       transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
           console.log(error)
@@ -47,7 +45,7 @@ const server = http.createServer((req, res) => {
           res.end('Oops! Something went wrong and we couldn\'t send your message.')
         } else {
           console.log('Email sent: ' + info.response)
-          // Redirect the user back to the referring page
+          // Redirecting the user back to the referring page
           const redirectUrl = 'https://heythatsneat.github.io/contact.html'
           res.writeHead(302, {
             Location: redirectUrl,
